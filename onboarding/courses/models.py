@@ -28,3 +28,18 @@ class Course(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Game(models.Model):
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
+    game_src = models.URLField()
+
+
+class Document(models.Model):
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
+
+
+class Test(models.Model):
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
+
+
