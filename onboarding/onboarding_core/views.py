@@ -11,3 +11,7 @@ def profile(request):
 
 def faq(request):
     return render(request, 'onboarding_core/FAQ.html')
+
+
+def docs(request):
+    return render(request, 'onboarding_core/documentation.html')

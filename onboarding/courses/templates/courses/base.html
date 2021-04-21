@@ -31,10 +31,10 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="nav navbar-nav header-nav-ul">
                         <li class="nav-item">
-                            <a class="nav-link active header-nav-doc" href="documentation.html">Документация <span class="sr-only">(текущее)</span></a>
+                            <a class="nav-link active header-nav-doc" href="{% url "onboarding_core:docs" %}"">Документация <span class="sr-only">(текущее)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-courses" style="color: #2F80ED;" href="account.html">Курсы</a>
+                            <a class="nav-link header-nav-courses" href="{% url "course:course_list" %}">Курсы</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link header-nav-faq" href="{% url "onboarding_core:faq" %}">FAQ</a>

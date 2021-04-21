@@ -1,0 +1,52 @@
+{% extends "courses/base.html" %}
+{% load static %}
+
+{% block styles %}<link rel="stylesheet" href="{% static "stylesheets/documentation.css" %}" type="text/css">{% endblock %}
+
+{% block title %}Курсы{% endblock %}
+
+{% block content %}
+        <div class="row">
+            <div class="col-lg-8 mb-5 div-rightborder">
+            <div class="doc-header">
+                <h2 class="mt-5"><span class="span-text-color">Документация</span></h2>
+                <p>Здесь ты найдешь множество полезных материалов, которые обязательно пригодятся тебе в процессе работы</p>
+            </div>
+            <div class="tab-content">
+                <div id="dashboard" class="tab-pane active">
+                    <div class="docs">
+                        <ul>
+                            <li><a href="">Антивирусная политика</a></li>
+                            <li><a href="#">Акт о готовности к работе центра электронных взаимодействий</a></li>
+                            <li><a href="#">Инструкция по организации парольной защиты</a></li>
+                            <li><a href="#">Концепция по организации парольной защиты</a></li>
+                            <li><a href="#">Концепция безопасности</a></li>
+                            <li><a href="#">Политика допустимого использования ИС</a></li>
+                            <li><a href="#">Инструкция по использованию электронной почты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            <!-- <div id="payments" class="tab-pane">
+
+            </div>
+
+            <div id="invoices" class="tab-pane">
+
+            </div> -->
+            </div>
+            </div>
+
+            <div class="col-lg-4" style="padding-right: 0;">
+                <div class="div-leftborder">
+        <ul class="nav nav-tabs mb-4 nav-aside">
+            <li class="nav-item" style="text-align: center; border-top-left-radius: 20px;"><a class="nav-link active a-nav-aside" style="border-top-left-radius: 20px;" href="#dashboard" data-toggle="tab">Темы</a></li>
+            <li class="nav-item" style="text-align: center;"><a class="nav-link a-nav-aside" href="#payments" data-toggle="tab">Темы</a></li>
+            <li class="nav-item" style="text-align: center;"><a class="nav-link a-nav-aside" href="#invoices" data-toggle="tab">Темы</a></li>
+            <li class="nav-item" style="text-align: center;"><a class="nav-link a-nav-aside" href="#settings" data-toggle="tab">Темы</a></li>
+            <li class="nav-item" style="text-align: center; border-bottom-left-radius: 20px;"><a class="nav-link a-nav-aside" style="border-bottom-left-radius: 20px;" href="#settings" data-toggle="tab">Темы</a></li>
+
+        </ul>
+                </div>
+            </div>
+        </div>
+{% endblock %}
