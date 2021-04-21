@@ -1,7 +1,7 @@
 {% extends "courses/base.html" %}
 {% load static %}
 
-{% block styles %}<link rel="stylesheet" href="{% static "stylesheets/history.css" %}" type="text/css">{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{% static "stylesheets/course.css" %}" type="text/css">{% endblock %}
 {% block title %}Курс{% endblock %}
 
 
@@ -9,10 +9,8 @@
         <div class="course_for_what_history ">
             <div class="row align-items-center div-allsidesborder">
                 <div class="col-lg-8">
-                    <h2 class="h2-history mt-3 mb-3">Интерактивный тур по офису</h2>
-                    <button type="button" class="btn btn-sm btn-primary btn-history"><span>Запуск</span></button>
-                    <p class="p-history">Этот интерактивный тур по нашему офису улучшит твое представление компании и познакомит
-                        с нашей философией и подготовит вас к возможному переходу к работе в офисе</p>
+                    <h2 class="h2-history mt-3 mb-3">{{ course.title }}</h2>
+                    <p class="p-history">{{ course.description }}</p>
                 </div>
                 <div class="col-lg-4">
                     <h3 style="font-weight: 600;font-size: 20px;">Оцените курс</h3>
@@ -22,14 +20,17 @@
         </div>
         <div class="about_course_history">
             <div class="row div-allsidesborder mt-2">
-                <div class="col-lg-6 mb-5">
-                    <h2 class="h2-about-history"><span class="span-text-color">Создаем историю вместе</span></h2>
-                    <p class="p-about-history">Какая-то рандомная популярная паста на очень много букв</p>
-                    <p class="p-about-history">Продолжение какой-то рандомной пасты на очень много букв</p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="{% static "images/Run - Health.png" %}" class="history-pic">
-                </div>
+<!--                <div class="col-lg-6 mb-5">-->
+<!--                    <h2 class="h2-about-history"><span class="span-text-color">Создаем историю вместе</span></h2>-->
+<!--                    <p class="p-about-history">Какая-то рандомная популярная паста на очень много букв</p>-->
+<!--                    <p class="p-about-history">Продолжение какой-то рандомной пасты на очень много букв</p>-->
+<!--                </div>-->
+<!--                <div class="col-lg-6">-->
+<!--                    <img src="{% static "images/Run - Health.png" %}" class="history-pic">-->
+<!--                </div>-->
+                {% if course.type == 'game' %}
+                {% include "courses/course/game.html" with game=content %}
+                {% endif %}
             </div>
         </div>
     </div>

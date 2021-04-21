@@ -44,7 +44,7 @@ class Course(models.Model):
 
 class Game(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
-    game_src = models.URLField()
+    game_src = models.SlugField()
 
 
 class Document(models.Model):

@@ -1,0 +1,75 @@
+.btn-enter {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.rate {
+    margin-left: 4px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.history-pic {
+    width: 500px;
+    height: 440px;
+    padding: 20px;
+}
+
+.h2-history {
+    font-size: 28px;
+    font-weight: 600;
+}
+button.btn-history {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    
+}
+
+.btn-history span {
+    color:white;
+    width: 91px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.btn-history a:hover {
+    text-decoration: none;
+}
+
+.p-history {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.h2-about-history {
+    margin-top:104px;
+    margin-bottom: 101px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.p-about-history {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+body { padding: 0; margin: 0 }
+#unity-container {  }
+#unity-container.unity-desktop { }
+#unity-container.unity-mobile { width: 100%; height: 100% }
+#unity-canvas { background: #231F20 }
+.unity-mobile #unity-canvas { width: 100%; height: 100% }
+#unity-loading-bar { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: none }
+#unity-logo { width: 154px; height: 130px; background: url('../images/unity-logo-dark.png') no-repeat center }
+#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; background: url('../images/progress-bar-empty-dark.png') no-repeat center }
+#unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('../images/progress-bar-full-dark.png') no-repeat center }
+#unity-footer { position: relative }
+.unity-mobile #unity-footer { display: none }
+#unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('../images/webgl-logo.png') no-repeat center }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('../images/fullscreen-button.png') no-repeat center }
+#unity-mobile-warning { left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
