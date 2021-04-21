@@ -1,0 +1,77 @@
+{% extends "courses/base.html" %}
+{% load static %}
+
+{% block styles %}<link rel="stylesheet" href="{% static "stylesheets/profile.css" %}" type="text/css">{% endblock %}
+
+{% block title %}Курсы{% endblock %}
+
+{% block content %}
+        <div class="row">
+            <div class="col-lg-8 mb-5 div-rightborder">
+                <div style="display: flex;">
+                <div class="employee-info p-profile-border">
+                    <h2>Иван Петров</h2>
+                    <div class="row">
+                        <div class="col-6" style="padding-right:0">
+                            <p>Возраст:</p>
+                            <p>Должность:</p>
+                            <p>Дата трудоустройства:</p>
+                            <p>Отдел:</p>
+                            <p>Сотрудник в соц. сетях:</p>
+                        </div>
+                        <div class="col-6" style="padding-left:0">
+                            <p>22</p>
+                            <p>Младший разработчик</p>
+                            <p>12.11.2020</p>
+                            <p>Аналитика данных</p>
+                            <div class="social">
+                                <p>Telegram</p>
+                                <img src="{% static "images/telegram.png" %}" style="margin-top:2px;width:19px;height:20px;">
+                                <p>ВКонтакте</p>
+                                <img src="{% static "images/vk.png" %}" style="margin-top:2px;width:20px;height:20px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="align-self:center;margin-left: 50px;">
+                    <img src="{% static "images/Rectangle 107.png" %}" style="width: 160px;height:160px;">
+                </div>
+                </div>
+                <div class="about-employee">
+                    <h2>О себе</h2>
+                    <div class="biography">
+                        <h3>Биография</h3>
+                        <p>Биография работника</p>
+                    </div>
+                    <div class="education">
+                        <h3>Образование</h3>
+                        <p>Южно-Российский государственный политехнический университет (НПИ) имени М.И. Платова</p>
+                    </div>
+                    <div class="hobbies">
+                        <h3>Хобби/Интересы</h3>
+                        <p>Хобби/Интересы работника</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4" style="padding-right: 0;">
+                <div class="div-leftborder" style="height: 150px;">
+                <h2 class="career-h2">ВАШ КАРЬЕРНЫЙ НАСТАВНИК</h2>
+                <div class="career">
+                    <img src="{% static "images/Наставник_аватар.png" %}" class="mentor-avatar" style="border-radius: 15px;">
+                    <div>
+                        <span class="span-text-color">Николай Семенов</span><br>
+                        <span>Старший разработчик</span>
+                    </div>
+                </div>
+                </div>
+                <div class="div-leftborder mt-3 div-mentor-for">
+                    <h3>Вы являетесь наставником для</h3>
+                    <img src="{% static "images/Group2.png" %}">
+                    <h3>Что-то пустовато...</h3>
+                    <p>Как только вы станете опытным работником, здесь будут имена тех, кому вы помогаете</p>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}
