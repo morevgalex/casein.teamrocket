@@ -1,18 +1,17 @@
 from django.db import models
-from django.db.models import CheckConstraint, Q, Subquery
 from django.utils import timezone
-
-
-class CourseType(models.IntegerChoices):
-    TEST = 1, "Test"
-    GAME = 2, "Game"
-    DOCUMENT = 3, 'Document'
 
 
 class Course(models.Model):
     STATUS_CHOICES = {
         ('draft', 'Draft'),
         ('published', 'Published'),
+    }
+
+    TYPES = {
+        ('test', 'Test'),
+        ('game', 'Game'),
+        ('doc', 'Document'),
     }
 
     title = models.CharField(max_length=250)
@@ -22,7 +21,7 @@ class Course(models.Model):
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
-    type = models.IntegerField(choices=CourseType.choices)
+    type = models.CharField(max_length=10, choices=TYPES)
 
     class Meta:
         ordering = ('-publish',)
@@ -31,57 +30,21 @@ class Course(models.Model):
         return self.title
 
 
-class GameCourseManager(models.Manager):
-    def get_queryset(self):
-        return super().get_queryset().filter(type=CourseType.GAME)
-
-
-class GameCourse(Course):
-    objects = GameCourseManager()
+class Game(models.Model):
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
     game_src = models.URLField()
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.type = CourseType.GAME
 
-    class Meta:
-        proxy = True
+class Document(models.Model):
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
 
 
-class DocumentCourseManager(models.Manager):
-    def get_queryset(self):
-        return super().get_queryset().filter(type=CourseType.DOCUMENT)
-
-
-class DocumentCourse(Course):
-    objects = GameCourseManager()
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.type = CourseType.DOCUMENT
-
-    class Meta:
-        proxy = True
-
-
-class TestCourseManager(models.Manager):
-    def get_queryset(self):
-        return super().get_queryset().filter(type=CourseType.TEST)
-
-
-class TestCourse(Course):
-    objects = GameCourseManager()
-    max_attempts = models.IntegerField(default=3)
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.type = CourseType.TEST
-
-    class Meta:
-        proxy = True
+class Test(models.Model):
+    course = models.ForeignKey(Course, on_delete=models.CASCADE)
 
 
 class Question(models.Model):
+    test = models.ForeignKey(Test, on_delete=models.CASCADE)
     TYPES = {
         ('single', 'Single'),
         ('multi', 'Multiple'),
@@ -97,3 +60,4 @@ class Answer(models.Model):
     is_true = models.BooleanField()
 
 # TODO add trigger to db for checking of single answer
+
