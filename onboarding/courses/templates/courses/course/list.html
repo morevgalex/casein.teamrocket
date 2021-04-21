@@ -19,17 +19,17 @@
 
                 <div class="col-lg-8">
 
-                    <h3 class="h3-courses-icons">{{ course.title }}<span >
+                    <h3 class="h3-courses-icons">{{ course.title }}
 
                         {% if course.type == "test" %}
-                        <img src="{% static "images/test_icon.png" %}" style="width:40px; height: 40px;">
+                        <span><img src="{% static "images/test_icon.png" %}"></span>
                         {% elif course.type == "game" %}
-                        <img src="{% static "images/game_icon.png" %}" style="width:40px; height: 40px;">
+                        <span><img src="{% static "images/game_icon.png" %}"></span>
                         {% elif course.type == "doc" %}
-                        <img src="{% static "images/doc_icon.png" %}" style="width:40px; height: 40px;">
+                        <span><img src="{% static "images/doc_icon.png" %}"></span>
                         {% endif %}
 
-                    </span></h3>
+                    </h3>
                     <p class="p-courses">{{ course.description|truncatewords:30|linebreaks }}</p>
 
                 </div>
