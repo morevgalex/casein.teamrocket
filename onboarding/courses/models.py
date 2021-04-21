@@ -41,6 +41,7 @@ class Document(models.Model):
 
 class Test(models.Model):
     course = models.ForeignKey(Course, on_delete=models.CASCADE)
+    max_attempts = models.IntegerField(default=3)
 
 
 class Question(models.Model):

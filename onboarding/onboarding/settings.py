@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'onboarding_core.apps.OnboardingCoreConfig',
     'courses.apps.CoursesConfig',
     'career.apps.CareerConfig',
+    'related_admin',
 ]
 
 MIDDLEWARE = [
