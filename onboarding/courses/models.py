@@ -95,3 +95,5 @@ class Answer(models.Model):
 
     text = models.CharField(max_length=500)
     is_true = models.BooleanField()
+
+# TODO add trigger to db for checking of single answer
