@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.urls import reverse
 
 
 class PublishedManager(models.Manager):
@@ -36,6 +37,9 @@ class Course(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('courses:course_detail', args=[self.slug])
 
 
 class Game(models.Model):
