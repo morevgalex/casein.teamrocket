@@ -2,7 +2,15 @@ from django.db import models
 from django.utils import timezone
 
 
+class PublishedManager(models.Manager):
+    def get_queryset(self):
+        return super(PublishedManager, self).get_queryset().filter(status='published')
+
+
 class Course(models.Model):
+    objects = models.Manager()
+    published = PublishedManager()
+
     STATUS_CHOICES = {
         ('draft', 'Draft'),
         ('published', 'Published'),
