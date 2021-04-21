@@ -1,0 +1,39 @@
+.FAQ-header {
+
+    height: 130px;
+
+}
+
+.search-area {
+    margin-left: 5%;
+    width: 80%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #E0E0E0;
+
+}
+
+.loupe {
+    width: 44px;
+    height: 44px;
+    margin: 5px;
+}
+
+.FAQs {
+
+    height: 600px;
+    padding-left: 30px ;
+    padding-top: 60px;
+}
+
+
+.h3-FAQs {
+    font-weight: 500;
+    font-size: 20px;
+}
+li::marker {
+    color:#2F80ED;
+    font-size: 24px;
+}

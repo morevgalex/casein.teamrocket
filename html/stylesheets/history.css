@@ -1,0 +1,58 @@
+.btn-enter {
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.rate {
+    margin-left: 4px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.history-pic {
+    width: 500px;
+    height: 440px;
+    padding: 20px;
+}
+
+.h2-history {
+    font-size: 28px;
+    font-weight: 600;
+}
+button.btn-history {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    
+}
+
+.btn-history span {
+    color:white;
+    width: 91px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.btn-history a:hover {
+    text-decoration: none;
+}
+
+.p-history {
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.h2-about-history {
+    margin-top:104px;
+    margin-bottom: 101px;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.p-about-history {
+    font-weight: 600;
+    font-size: 16px;
+}

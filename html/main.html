@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>Главная</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <a href="main.html" class="navbar-brand">виртуальная<br>адаптация</a>
+                <button type="button" class="btn btn-sm btn-primary btn-enter" data-toggle="modal" data-target=".modal"><span>Войти</span></button>
+            </div>
+        </div>
+    </header>
+
+    <!--        Header       -->
+
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+        <h2 class="h2 h2-main">Привет, мы рады видеть тебя в нашей <span class="span-text-color">дружной команде.</span></h2>
+        <div class="p-cont">
+        <p class="p">Этот сайт создан специально для того, чтобы у тебя возникало меньше трудностей в первое время работы</p>
+        <p class="p">Здесь тебя ждут обучающие курсы в различных интересных формах, таких как 
+            <span class="span-text-color">игры, интерактивные тесты и лекции</span></p>
+        </div>
+        <div class="video-container">
+            <video id="video-1" poster="" controls>
+                <source src="videos/tourNew.mp4" type="video/mp4">Ваш браузер не поддерживает <code>видео</code> элемент.
+             </video>
+        </div>
+        </div>
+        <div class="col-lg-6">
+            <img src="images/laptop2.png" class="laptop">
+        </div>
+    </div>
+    </div>
+
+    <!--        Footer       -->
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-6 col-6">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <img src="images/юргпу_лого.jpg" class="urspu_logo">
+                        </div>
+                        <div class="col-lg-9 div-footer ">
+                            <span> Южно-Российский государственный политехнический университет (НПИ) имени М.И. Платова</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-6">
+                    <div style="float: right;">
+                        <p class="navbar-brand" style="color: white;padding-bottom: 0;">виртуальная<br>адаптация</p>
+                        <p class="p-footer main-font">By Team Rocket<span><img src="images/rocket 1.png" class="rocket_logo"></span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Войти в аккаунт</h4>
+                </div>
+                    <form action="mentors.html" method="POST" class="form">
+                        <div class="row align-items-center justify-content-between" style="margin-left:35px; margin-bottom: 10px;">
+                            <div class="col-6">
+                                <div style="font-size: 18px;font-weight: 500;">
+                                    <label for="login">Логин</label>
+                                </div>
+                                <input type="text" name="login" id="login" class="modal-input">
+                            </div>
+                            <div class="col-6">
+                                <div style="font-size: 18px;font-weight: 500;">
+                                    <label for="pswd">Пароль</label>
+                                </div>
+                                <input type="password" name="pswd" id="pswd" class="modal-input">
+                            </div>
+                        </div>
+                <div class="modal-footer" style="justify-content: center;">
+                    <button type="submit" class="btn btn-sm btn-primary btn-form"><span class="span-button-form">Войти</span></button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- end of main content container -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

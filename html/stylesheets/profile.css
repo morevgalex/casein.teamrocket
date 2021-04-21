@@ -1,0 +1,124 @@
+/* Карьерный наставник */
+
+.career-h2 {
+    font-size: 17px;
+
+    color: #333333;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-left: 55px;
+
+}
+
+.career {
+    display: flex;
+    margin-left: 50px;
+}
+
+.career span:nth-of-type(1) {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.career span:nth-of-type(2) {
+    color: #333333;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Информация о сотруднике */
+
+.p-profile-border p{
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.employee-info {
+    width: 450px;
+}
+
+.employee-info h2 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom:15px;
+}
+
+.employee-info .col-6:first-of-type p {
+    color: #2F80ED;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.employee-info .col-6:first-of-type p:last-of-type {
+    color: #2F80ED;
+    font-weight: 600;
+    font-size: 16px;
+    border:0;
+}
+
+
+.employee-info .col-6:last-of-type p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.employee-info .social {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content:space-between;
+    width:120px;
+}
+
+.employee-info .social p {
+    border: 0;
+}
+
+/* Доп. информация о сотруднике */
+
+.about-employee {
+    width: 550px;
+    margin-top: 40px;
+}
+.about-employee div {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.about-employee h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #333333;
+}
+
+.about-employee h3 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #2F80ED;
+}
+
+.about-employee p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Работник наставник для */
+
+.div-mentor-for {
+    text-align: center;
+    height: 450px;
+}
+.div-mentor-for h3 {
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.div-mentor-for p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.div-mentor-for img {
+    width: 270px;
+    height: 200px;
+    margin-top: 20px;
+}

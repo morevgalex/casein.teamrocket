@@ -1,0 +1,325 @@
+@font-face {
+    font-family: ts-block;
+    src: url(fonts/2978-font.otf);
+}
+
+* {
+    font-family: 'Montserrat';
+}
+
+* body {
+    background-color: #F2F2F2;
+}
+
+.modal-input {
+    border: 2px solid #BDBDBD;
+    width: 250px;
+    height: 45px;
+    border-radius: 40px;
+}
+button.btn-form {
+    width: 250px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: #2F80ED;
+}
+
+.btn-form span {
+    width: 68px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+.header {
+    margin-bottom: 10px;
+}
+
+.div-employee {
+    background-color: white;
+    height: 115px;
+    border:0; 
+    border-bottom-left-radius: 20px;
+}
+
+.div-allsidesborder {
+    background-color: white; 
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.div-rightborder {
+    background-color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.div-leftborder {
+    background-color: white; 
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.div-bottomborder {
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.h2 {
+    margin-bottom: 40px;
+}
+
+.h2-main {
+    font-weight: bold;
+    font-size: 40px;
+    width:789px;
+    height: 118px;
+}
+
+.p {
+    font-weight: 450;
+    width: 788px;
+    height: 58px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.p-cont {
+    width: 788px;
+    height: 128px;
+    margin-bottom: 93px;
+}
+
+.p-footer {
+    color: white;
+    font-size: 24px;
+}
+
+.div-footer {
+    margin-top: 22px; 
+}
+.div-footer span {
+    color: white;
+    width: 383px;
+    height: 11px;
+    font-size:18px;
+    font-weight: 400;
+    
+
+}
+
+.modal-content{
+    width: 650px;
+    height: 282px;
+    border-radius: 20px;
+}
+.modal-header {
+    display: block;
+    text-align: center;
+    border: 0;
+}
+
+.modal-footer {
+    border: 0;
+}
+
+.modal-title {
+    font-size: 24px;
+    font-weight: 550;
+    margin-top:30px;
+
+}
+
+.form {
+    margin-bottom: 70px;
+}
+
+.video-container {
+
+    max-width: 627px;
+    max-height: 352px;
+    margin-bottom: 93px;
+    
+
+}
+
+.span-employee {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
+
+}
+.span-employee a:hover {
+    text-decoration: none;
+}
+
+.header-nav-doc {
+    width: 150px;
+
+    font-weight: 600;
+    font-size: 20px;
+    color: #4F4F4F;
+}
+
+.header-nav-courses {
+    width: 63px;
+
+    font-weight: 600;
+    font-size: 20px;
+    color: #4F4F4F;
+}
+
+.header-nav-faq {
+    width: 53px;
+
+    font-weight: 600;
+    font-size: 20px;
+    color: #4F4F4F;
+}
+
+.header-nav-ul li {
+    margin-right: 25px;
+}
+
+.header-nav-ul {
+    margin-left: 10%;
+}
+.urspu_logo {
+    width: 108px;
+    height: 108 px;
+    border-radius: 200px;
+    display: inline-block;
+}
+
+.laptop {
+    max-width: 800px;
+    max-height: 600px;
+    margin-top: 100px;
+}
+
+input {
+    border-radius: 15px;
+    border: 2px solid gray;
+}
+.rocket_logo {
+    width: 44px;
+    height: 45px;
+    margin-left: 10px;
+    margin-bottom: 14px;
+}
+
+footer {
+    background-color: #2F80ED;
+    padding: 50px;
+}
+
+.video-container video {
+
+    width: 100%;
+
+}
+
+.box-shadow {
+    border: 0;
+    border-radius: 9px;
+    box-shadow: 10px 10px rgb(255, 209, 209);
+}
+
+.header li a:hover {
+    color: darkblue;
+}
+
+.navbar-brand {
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    transform: scaleY(0.6);
+    color: #2F80ED; 
+}
+
+.btn {
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+.main-font {
+    font-family: 'Montserrat';
+}
+
+.btn-enter {
+    width: 190px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #2F80ED;
+    
+}
+
+.btn-enter span {
+    width: 81px;
+    height: 29px;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.span-text-color {
+    color: #2F80ED;
+}
+
+.span-footer {
+    color: white;
+    font-size: 10px;
+}
+
+
+.hamb-menu {
+    width: 100%;
+    height: 100%;
+}
+.map_icon {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #2F80ED;
+    height: 252px;
+}
+
+
+.mentor-avatar {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 46px;
+    height: 46px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .map_addres {
+        padding-top: 0px;
+    }
+}
+@media (max-width: 1199px) {
+    .laptop {
+        display: none;
+    }
+    .navbar-brand {
+        display: none;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .header .col-lg-4 {
+        text-align: center;
+    }
+}
