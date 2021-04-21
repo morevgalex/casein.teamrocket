@@ -7,3 +7,7 @@ def index(request):
 
 def profile(request):
     return render(request, 'onboarding_core/profile.html')
+
+
+def faq(request):
+    return render(request, 'onboarding_core/FAQ.html')

@@ -1,0 +1,30 @@
+{% extends "courses/base.html" %}
+{% load static %}
+
+{% block styles %}<link rel="stylesheet" href="{% static "stylesheets/FAQ.css" %}" type="text/css">{% endblock %}
+
+{% block title %}FAQ{% endblock %}
+
+{% block content %}
+    <div class="container" style="padding-left: 0;padding-right: 0;">
+        <div class="FAQ-header div-bottomborder" style="display: flex;justify-content: center;">
+            <h2 style="font-weight:700;font-size: 30px;color: #4f4f4f;align-self:center;">Частые вопросы <span class="span-text-color">(FAQ)</span></h2>
+        </div>
+        <div class="search-form div-allsidesborder mt-2">
+            <form action="#url" method="POST">
+                <input class="search-area" placeholder="Поиск по всем вопросам">
+                <span><button type="button" style="border: 0; background: white;">
+                <img src="{% static "images/Лупа.png" %}" class="loupe"></button></span>
+            </form>
+        </div>
+
+        <div class="FAQs div-allsidesborder mt-2">
+            <ul>
+                <li class="li-FAQs"><h3 class="h3-FAQs"><span class="span-text-color">Опоздание на работу</span> согласно Трудовому кодексу</h3>
+                <p class="p" style="font-size: 18px; font-weight:500;">Опозданием принято называть любое появление сотрудника на рабочем месте позже положенного
+                    срока — от 1 минуты до 4 часов — независимо от...
+                    <span class="span-text-color" style="text-decoration: underline;">читать продолжение</span></p></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}
