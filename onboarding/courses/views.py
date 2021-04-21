@@ -3,7 +3,7 @@ from .models import Course
 
 
 def course_list(request):
-    courses = Course.publish.all()
+    courses = Course.published.all()
     return render(request, 'courses/course/list.html', {
         'courses': courses
     })
