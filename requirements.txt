@@ -1,6 +1,1 @@
-asgiref==3.3.4
-Django==3.2
-django-related-admin==1.0.1
-pytz==2021.1
-six==1.15.0
-sqlparse==0.4.1
+VAULT_MOUNT_POINT=fw_test;VAULT_TOKEN=s.0V4o9iSR9ixDslaQBN1VmPnQ;VAULT_ADDR=http://10.226.9.248:31380;DATABASE_CONNECTION_STRING=postgresql://exp_dev1:tU$Drn#814&taG@10.226.9.249:5432/fw_metadata;ARTEFACT_GENERATOR_URL=http://10.226.9.248:22751
